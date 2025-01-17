@@ -24,8 +24,8 @@ The model uses the FER2013 dataset, which is a publicly available dataset for fa
 
 1. Clone this repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone https://github.com/Mr-Nobody-00/Emotion_Recognition.git
+   cd Emotion_Recognition
    ```
 
 2. Install dependencies:
@@ -43,7 +43,7 @@ The model uses the FER2013 dataset, which is a publicly available dataset for fa
 
 1. Open the `model_maker.py` file and set the dataset path:
    ```python
-   dataset_path = "path/to/fer2013"
+   csv_path = "path/to/fer2013"
    ```
 
 2. Run the script to train and save the model:

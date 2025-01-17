@@ -40,12 +40,10 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 # Train Model
 history = model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=25, batch_size=32)
 
-# Save the trained model
-model.save('emotion_model.h5')  # Save the model to a file
+model.save('emotion_model.h5')
 
 print("Model has been saved as 'emotion_model.h5'.")
 
-# Plot Accuracy
 plt.plot(history.history['accuracy'], label='Training Accuracy')
 plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 plt.legend()
